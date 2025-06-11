@@ -1,42 +1,45 @@
-import React from 'react'
+import React from 'react';
 import ResponsiveAppBar from '../navbar/Navbar';
+import './Register.css';
 
 function Register() {
   return (
     <div>
-        <ResponsiveAppBar/>
-        <h1>Register for Managing ....</h1>
-        <form>
-            <div>
-                <label htmlFor="username">Username:</label>
-                <input type="text" id="username" name="username" required />
-            </div>
-            <div>
-                <label htmlFor="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required />
-            </div>
-            <div>
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-                <label htmlFor="phone">Phone No:</label>
-                <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div>
-                <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-            <div>
-                <label htmlFor="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required />
-            </div>
-            <div>
-                <input type="submit" value="Register" />
-            </div>
+      <ResponsiveAppBar />
+      <div className="register-container">
+        <h1 className="register-title">Register for Managing...</h1>
+        <form className="register-form">
+          <div className="form-group">
+            <label htmlFor="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required />
+          </div>
+          <div className="form-group">
+            <input type="submit" value="Register" className="register-button" />
+          </div>
         </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Register
+export default Register;

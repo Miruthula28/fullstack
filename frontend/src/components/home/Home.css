@@ -1,0 +1,23 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+  align-items: center;
+}
+
+.home-text {
+  padding: 20px;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

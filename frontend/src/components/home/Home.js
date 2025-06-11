@@ -1,11 +1,11 @@
 import React from 'react'
-import ResponsiveAppBar from '../navbar/Navbar '
+import ResponsiveAppBar from '../navbar/Navbar'
 
-function home(){
+function Home(){
   return (
     <div>
       <ResponsiveAppBar/>
     </div>
   )
 }
-export default home
+export default Home

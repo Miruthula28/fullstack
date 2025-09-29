@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ResponsiveAppBar from '../navbar/Navbar';
 import './Register.css';
 
+
+
 function Register() {
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        const formData = new FormData();
+        const username = "";
+        const fullname = "";
+        const email ="";
+        const phone ="";
+        const password ="";
+        const confirmPassword = "";
+    }
   return (
     <div>
       <ResponsiveAppBar />
